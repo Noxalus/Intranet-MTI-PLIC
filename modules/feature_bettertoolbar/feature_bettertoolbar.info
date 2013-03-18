@@ -1,0 +1,12 @@
+name = FEATURE_BetterToolbar
+description = Improve the old toolbar
+core = 7.x
+package = Features
+dependencies[] = admin_devel
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+features[features_api][] = api:1
+features[user_permission][] = access administration menu
+features[user_permission][] = display drupal links
+features[user_permission][] = flush caches
+features_exclude[dependencies][features] = features
