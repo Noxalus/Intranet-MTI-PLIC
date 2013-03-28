@@ -1,0 +1,197 @@
+body
+{
+	background-color:white;
+	background-image:url('../images/fond.png');
+}
+
+#page 
+{
+  *zoom: 1;
+  max-width: 78em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  width: 68em;
+  background-color:white;
+  box-shadow: 1px 1px 6px black;
+  border-style: solid;
+  border-width: 1px;
+  border-color:black;
+}
+
+/* HEADER LOGOS */
+html.js body.html div#page-wrapper div#page div#header div.section a#logo img
+{
+	margin-left:0px;
+	margin-top:10px;
+}
+
+html.js body.html div#page-wrapper div#page div#header a#logo-EPITA
+{
+	position:absolute;
+	width:137px;
+	height:80px;
+	margin-top:-105px;
+	margin-left:860px;
+}
+
+/* HEADER TITRE */
+html.js body.html div#page-wrapper div#page div#header div.section div#name-and-slogan
+{
+	position:absolute;
+	margin-top:-120px;
+	margin-left:400px;
+}
+
+/* NAVIGATION MENU */
+#menu_placement
+{
+	height:45px;
+	margin-left:0px;
+	padding-top:5px;
+	background-color:#002d40;
+	z-index:-2;
+}
+
+#trans-nav 
+{ 
+	list-style-type: none; 
+	height: 40px;
+	/* PERMET DE PLACER LE MENU*/	
+	margin-top:0px;
+	margin-left:200px;
+	padding-top:5px;
+	padding: 0; 
+}
+
+#trans-nav li 
+{ 
+	float: left; 
+	position: relative; 
+	padding: 0;
+	padding-bottom:2px;
+	line-height: 40px; 
+	font-family:Terminal;
+	font-size:14px;
+	z-index:2;
+	background-color:#002d40;
+}
+
+#trans-nav li#dernier
+{  
+	border-right: solid 1px;
+}
+
+#trans-nav li:hover 
+{ 
+	background-position: 0 -40px; 
+}
+
+#trans-nav li a 
+{ 
+	display: block; 
+	padding: 0 15px; 
+	color: #fff; 
+	text-decoration: none; 
+	border-left:1px solid black;
+}
+
+#trans-nav li a:hover 
+{ 
+	color: #a3f1d7; 
+}
+
+#trans-nav li ul 
+{ 
+	opacity: 0; 
+	position: absolute; 
+	left: 0; 
+	width: 10em;
+	padding:0;
+	padding-top:10px;
+	background-color:#002d40;
+	top:40px;
+	list-style-type: none; 
+	margin: 0; 
+	z-index:1;
+}
+
+#trans-nav li:hover ul 
+{ 
+	opacity: 0.85; 
+}
+
+#trans-nav li ul li 
+{ 
+	float: none; 
+	position: static; 
+	height: 0; 
+	line-height: 0; 
+	background: none; 
+}
+
+#trans-nav li:hover ul li 
+{ 
+	height: 30px; 
+	line-height: 30px; 
+}
+
+#trans-nav li ul li a 
+{ 
+	background-color:#002d40;
+	border-top:1px solid #000000;
+}
+
+#trans-nav li ul li a:hover 
+{ 
+	background: #000000; 
+}
+
+#trans-nav li 
+{ 
+	-webkit-transition: all 0.2s; 
+}
+
+#trans-nav li a 
+{ 
+	-webkit-transition: all 0.5s; 
+}
+
+#trans-nav li ul 
+{ 
+	-webkit-transition: all 1s; 
+}
+
+#trans-nav li ul li 
+{ 
+	-webkit-transition: height 0.5s; 
+}
+
+a#trans 
+{ 
+	/*background: #fff; */
+	color: #aa0000; 
+	padding: 3px; 
+	-webkit-transition: all 1s linear; 
+}
+
+a#trans:hover 
+{
+	background: #220077; 
+	color: #fff; 
+}
+
+/* NAVIGATION MENU DEROULANT */
+html.js body.html div#page-wrapper div#page div#navigation div.section
+{
+	padding-left:180px;
+	color:white;
+}
+
+/* FOOTER */
+html.js body.html div#page-wrapper div#page div#footer
+{
+	background-color:#002d40;
+	color:white;
+}

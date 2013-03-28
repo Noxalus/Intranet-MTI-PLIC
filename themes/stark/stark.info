@@ -1,9 +1,14 @@
 name = Stark
-description = This theme demonstrates Drupal's default HTML markup and CSS styles. To learn how to build your own theme and override Drupal's default code, see the <a href="http://drupal.org/theme-guide">Theming Guide</a>.
+description = Intranet-MTI Drupal 7 Theme by Gabriel BRUGUEROLLE
 package = Core
 version = VERSION
 core = 7.x
-stylesheets[all][] = layout.css
+
+php = 5.2.0
+stylesheets[all][] = css/default.css
+stylesheets[all][] = css/layout.css
+
+regions[header] = Header
 
 ; Information added by drupal.org packaging script on 2013-02-20
 version = "7.20"
