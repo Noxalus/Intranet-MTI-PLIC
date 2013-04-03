@@ -19,6 +19,26 @@ body
   border-color:black;
 }
 
+/* CONNEXION */
+#connexion
+{
+	margin:auto;
+	margin-top:100px;
+	width:550px;
+	background-color: #FFFFFF;
+	background-color: rgba(255, 255, 255, 0.7);
+	/* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+}
+
+#connexion img
+{
+	margin-top:-35px;
+	margin-left:25px;
+}
+
 /* HEADER LOGOS */
 html.js body.html div#page-wrapper div#page div#header a#logo img
 {
