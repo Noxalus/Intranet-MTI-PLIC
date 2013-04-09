@@ -1,0 +1,104 @@
+﻿<?php
+/**
+ * Implementation of hook_schema().
+ */
+function projets_schema() {
+ //Schema  of the tables.
+ $schema = array();
+$schema['projets_projet'] = array(
+  'description' => 'TODO',
+  'fields' => array(
+    'idprojet' => array(
+      'description' => 'TODO',
+      'type' => 'serial',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+    ),
+    'name' => array(
+      'description' => 'Nom du projet',
+      'type' => 'varchar',
+      'length' => '50',
+      'not null' => FALSE,
+    ),
+    'description' => array(
+      'description' => 'TODO',
+      'type' => 'text',
+      'not null' => FALSE,
+    ),
+  ),
+  'primary key' => array('idprojet'),
+);
+
+ 
+$schema['projets_groupe'] = array(
+  'description' => 'permet de faire appartenir un etudiant a un groupe de projet',
+  'fields' => array(
+    'idgroupe' => array(
+      'description' => 'TODO',
+      'type' => 'serial',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+    ),
+    'num_goupe' => array(
+      'description' => 'permet les groupe de plusieurs personnes',
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+    ),
+    'fk_idprojet' => array(
+      'description' => 'id du projet',
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+    ),
+    'fk_uid' => array(
+      'description' => 'uid de l etudiant',
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+    ),
+  ),
+  'primary key' => array('idgroupe'),
+); 
+
+$schema['projets_rendu'] = array(
+  'description' => 'TODO',
+  'fields' => array(
+    'idrendu' => array(
+      'description' => 'TODO',
+      'type' => 'serial',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+    ),
+    'name' => array(
+      'description' => 'TODO',
+      'type' => 'varchar',
+      'length' => '50',
+      'not null' => TRUE,
+    ),
+    'fk_idprojet' => array(
+      'description' => 'projet concerne par le rendu',
+      'type' => 'int',
+      'unsigned' => TRUE,
+      'not null' => TRUE,
+    ),
+  ),
+  'primary key' => array('idrendu'),
+); 
+  return $schema;
+}
+ 
+/**
+ * Implementation of hook_install().
+ */
+function projets_install() {
+
+}
+ 
+/**
+ * Implementation of hook_uninstall().
+ */
+function projets_uninstall() {
+    //Delete all variable related to your module. SAFER : use variable_del('projets_variable_name') for each created variable
+    db_query("DELETE FROM {variable} WHERE name LIKE 'projets%'");  
+}

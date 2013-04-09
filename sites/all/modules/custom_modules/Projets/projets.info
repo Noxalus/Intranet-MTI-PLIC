@@ -1,0 +1,5 @@
+name = "Projets"
+description = "Modules permettant de gerer les projets des etudiants de la majeure"
+core = "7.x"
+version = "7.x-alpha2"
+package = "Modules Crees"
