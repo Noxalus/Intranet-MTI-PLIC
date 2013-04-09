@@ -1,0 +1,8 @@
+name = FEATURE_Promotion
+description = Ajoute la promotion au profil utilisateur
+core = 7.x
+package = Features
+features[features_api][] = api:1
+features[field][] = user-user-field_promotion
+features_exclude[dependencies][features] = features
+features_exclude[dependencies][number] = number
