@@ -92,7 +92,7 @@ $schema['projets_rendu'] = array(
  * Implementation of hook_install().
  */
 function projets_install() {
-
+ drupal_install_schema('projets');
 }
  
 /**
@@ -101,4 +101,5 @@ function projets_install() {
 function projets_uninstall() {
     //Delete all variable related to your module. SAFER : use variable_del('projets_variable_name') for each created variable
     db_query("DELETE FROM {variable} WHERE name LIKE 'projets%'");  
+	drupal_uninstall_schema('projets');
 }
