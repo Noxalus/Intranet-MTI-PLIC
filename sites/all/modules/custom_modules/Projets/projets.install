@@ -88,6 +88,11 @@ $schema['projets_rendu'] = array(
   return $schema;
 }
  
+ /**
+  * Implementation hook_menu()
+  */
+
+ 
 /**
  * Implementation of hook_install().
  */

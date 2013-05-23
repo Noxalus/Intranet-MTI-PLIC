@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function minimodule_menu()
+{
+   $items['test'] = array(
+      'title' => 'Page de test',
+      'page callback' => 'minimodule_test',
+        'access callback' => TRUE,
+    );
+return $items;
+}
+
+function monmodule_test() {
+return "test";}
+
+?>

@@ -31,7 +31,7 @@
 					
 					<li><a class="mainmenu" href="#">Projets</a>
 						<ul>
-							<li><a href="#">PLIC</a></li>
+							<li><a href="Pages/test1.php">PLIC</a></li>
 							<li><a href="#">DOT.NET</a></li>
 						</ul>
 					</li>

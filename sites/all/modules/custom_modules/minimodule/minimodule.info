@@ -1,0 +1,5 @@
+; Fichier minimodule/minimodule.info
+name = Module minimaliste
+description = Un module minimaliste, affichant un hello word à l'url /helloworld du site
+core = 7.x
+package = Exemple
